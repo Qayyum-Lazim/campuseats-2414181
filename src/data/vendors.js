@@ -1,7 +1,7 @@
 const vendors = [
  {
  id: 'my-restaurant',
- name: 'Your Restaurant Name',
+ name: 'Al-Khairat Restaurant',
  location: 'Mahallah ..., Block ...',
  openHours: '7:00 am - 10:00 pm',
  isOpen: true,
