@@ -6,11 +6,11 @@ const vendors = [
  openHours: '7:00 am - 10:00 pm',
  isOpen: true,
  menu: [
- { id: 'my-1', name: 'Dish 1', description: '...', price: 7.5, category: 'Rice',
+ { id: '01', name: 'Bubur', description: 'Delicious rice porridge', price: 6, category: 'Rice',
 available: true },
- { id: 'my-2', name: 'Dish 2', description: '...', price: 6, category:
-'Noodles', available: true },
- { id: 'my-3', name: 'Drink 1', description: '...', price: 2.5, category:
+ { id: '02', name: 'Roti Canai', description: 'flaky and delicious', price: 1, category:
+'Starters', available: true },
+ { id: '03', name: 'Air Bandung', description: 'Rose syrup with milk', price: 2.5, category:
 'Drinks', available: false },
  ],
  },
