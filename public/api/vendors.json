@@ -1,0 +1,267 @@
+
+[
+  {
+    "id": "2414181-restaurant",
+    "name": "Al-Khairat Restaurant",
+    "location": "WadiBudi, Block A",
+    "openHours": "7:00 am - 10:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "01",
+        "name": "Bubur",
+        "description": "Delicious rice porridge",
+        "price": 6,
+        "category": "Rice",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "02",
+        "name": "Roti Canai",
+        "description": "Flaky and delicious",
+        "price": 1,
+        "category": "Starters",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "03",
+        "name": "Milkshake",
+        "description": "Creamy and refreshing",
+        "price": 2.5,
+        "category": "Drinks",
+        "available": false,
+        "popular": false
+      },
+      {
+        "id": "04",
+        "name": "Nasi Lemak",
+        "description": "Fragrant coconut rice with sambal and anchovies",
+        "price": 5,
+        "category": "Rice",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "05",
+        "name": "Nasi Goreng Kampung",
+        "description": "Traditional fried rice with vegetables and anchovies",
+        "price": 7,
+        "category": "Rice",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "06",
+        "name": "Roti Telur",
+        "description": "Crispy flatbread filled with egg",
+        "price": 2.5,
+        "category": "Starters",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "07",
+        "name": "Karipap",
+        "description": "Crispy pastry filled with potatoes",
+        "price": 1.5,
+        "category": "Starters",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "08",
+        "name": "Teh Tarik",
+        "description": "Traditional Malaysian pulled milk tea",
+        "price": 2.5,
+        "category": "Drinks",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "09",
+        "name": "Milo Ais",
+        "description": "Refreshing iced chocolate malt drink",
+        "price": 3.5,
+        "category": "Drinks",
+        "available": true,
+        "popular": false
+      }
+    ]
+  },
+  {
+    "id": "2411193-restaurant",
+    "name": "Hanafi's Kitchen",
+    "location": "Mahallah Uthman, Block E",
+    "openHours": "8:00 am - 10:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "2411193-1",
+        "name": "Nasi Lemak Ayam",
+        "description": "Coconut rice, fried chicken, sambal and egg",
+        "price": 7,
+        "category": "Rice",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "2411193-2",
+        "name": "Nasi Goreng Kampung",
+        "description": "Traditional fried rice with anchovies, vegetables and egg",
+        "price": 6,
+        "category": "Rice",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2411193-3",
+        "name": "Nasi Ayam",
+        "description": "Steamed rice served with chicken and chilli sauce",
+        "price": 7.5,
+        "category": "Rice",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "2411193-4",
+        "name": "Mee Goreng",
+        "description": "Fried noodles with vegetables and egg",
+        "price": 5.5,
+        "category": "Noodles",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "2411193-5",
+        "name": "Maggi Goreng",
+        "description": "Fried instant noodles with vegetables and egg",
+        "price": 5,
+        "category": "Noodles",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2411193-6",
+        "name": "Milo",
+        "description": "Chilled chocolate malt drink",
+        "price": 2.8,
+        "category": "Drinks",
+        "available": false,
+        "popular": false
+      },
+      {
+        "id": "2411193-7",
+        "name": "Teh Ais",
+        "description": "Malaysian iced milk tea",
+        "price": 2.5,
+        "category": "Drinks",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2411193-8",
+        "name": "French Fries",
+        "description": "Crispy golden fried potato fries",
+        "price": 4,
+        "category": "Snacks",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2411193-9",
+        "name": "Chicken Nuggets",
+        "description": "Crispy chicken nuggets served with dipping sauce",
+        "price": 5,
+        "category": "Snacks",
+        "available": true,
+        "popular": false
+      }
+      
+    ]
+  },
+  {
+    "id": "2415531-kafe-bilal",
+    "name": "Kafe Mahallah Bilal",
+    "location": "Mahallah Bilal, Cafe Block, Ground Floor",
+    "openHours": "7:00 am - 10:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "bil-1",
+        "name": "Nasi Ayam Gepuk",
+        "description": "Fried chicken with sambal and rice",
+        "price": 8,
+        "category": "Rice",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "bil-2",
+        "name": "Mee Tarik",
+        "description": "Chinese pulled noodles with chili sauce",
+        "price": 10,
+        "category": "Noodles",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "bil-3",
+        "name": "Green Tea",
+        "description": "Green tea with milk and sugar",
+        "price": 3,
+        "category": "Drinks",
+        "available": false,
+        "popular": false
+      },
+      {
+        "id": "bil-4",
+        "name": "Thai Tea",
+        "description": "Thai tea with milk and sugar",
+        "price": 3,
+        "category": "Drinks",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "bil-5",
+        "name": "Nasi Ayam",
+        "description": "Fried chicken with rice",
+        "price": 6,
+        "category": "Rice",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "bil-6",
+        "name": "Sizzling Chicken Mee",
+        "description": "Sizzling chicken with yee mee noodles",
+        "price": 8,
+        "category": "Noodles",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "bil-7",
+        "name": "Sizzling Chicken Rice",
+        "description": "Sizzling chicken with rice",
+        "price": 8,
+        "category": "Rice",
+        "available": false,
+        "popular": false
+      },
+      {
+        "id": "bil-8",
+        "name": "Nasi Ayam Gepuk Special",
+        "description": "Fried chicken with sambal and rice, plus kubis goreng",
+        "price": 10,
+        "category": "Rice",
+        "available": true,
+        "popular": true
+      }
+        
+      
+    ]
+  }
+]
