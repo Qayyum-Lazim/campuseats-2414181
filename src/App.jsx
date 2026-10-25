@@ -13,7 +13,6 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [reloadKey, setReloadKey] = useState(0);
-
   const [cart, setCart] = useState([]);
   const [view, setView] = useState("menu");
   const [lastOrder, setLastOrder] = useState(null);

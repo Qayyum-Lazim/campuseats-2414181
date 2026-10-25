@@ -8,25 +8,25 @@
     "isOpen": true,
     "menu": [
       {
-        "id": "01",
-        "name": "Bubur",
-        "description": "Delicious rice porridge",
+        "id": "2414181-1",
+        "name": "Nasi Arab",
+        "description": "Fragrant rice with chicken and spices with a side of salad",
         "price": 6,
         "category": "Rice",
         "available": true,
         "popular": false
       },
       {
-        "id": "02",
-        "name": "Roti Canai",
-        "description": "Flaky and delicious",
+        "id": "2414181-2",
+        "name": "Toast Bread",
+        "description": "Crispy and delicious",
         "price": 1,
         "category": "Starters",
         "available": true,
         "popular": true
       },
       {
-        "id": "03",
+        "id": "2414181-3",
         "name": "Milkshake",
         "description": "Creamy and refreshing",
         "price": 2.5,
@@ -35,7 +35,7 @@
         "popular": false
       },
       {
-        "id": "04",
+        "id": "2414181-4",
         "name": "Nasi Lemak",
         "description": "Fragrant coconut rice with sambal and anchovies",
         "price": 5,
@@ -44,7 +44,7 @@
         "popular": true
       },
       {
-        "id": "05",
+        "id": "2414181-5",
         "name": "Nasi Goreng Kampung",
         "description": "Traditional fried rice with vegetables and anchovies",
         "price": 7,
@@ -53,16 +53,16 @@
         "popular": true
       },
       {
-        "id": "06",
-        "name": "Roti Telur",
-        "description": "Crispy flatbread filled with egg",
+        "id": "2414181-6",
+        "name": "Keropok Lekor",
+        "description": "Traditional Malaysian fish sausage served with chili sauce",
         "price": 2.5,
         "category": "Starters",
         "available": true,
         "popular": false
       },
       {
-        "id": "07",
+        "id": "2414181-7",
         "name": "Karipap",
         "description": "Crispy pastry filled with potatoes",
         "price": 1.5,
@@ -71,18 +71,18 @@
         "popular": false
       },
       {
-        "id": "08",
-        "name": "Teh Tarik",
-        "description": "Traditional Malaysian pulled milk tea",
+        "id": "2414181-8",
+        "name": "Kopi Tarik",
+        "description": "Traditional Malaysian pulled coffee",
         "price": 2.5,
         "category": "Drinks",
         "available": true,
         "popular": true
       },
       {
-        "id": "09",
-        "name": "Milo Ais",
-        "description": "Refreshing iced chocolate malt drink",
+        "id": "2414181-9",
+        "name": "Milo Ais Dinosaur",
+        "description": "Refreshing iced chocolate malt drink with extra Milo powder",
         "price": 3.5,
         "category": "Drinks",
         "available": true,
@@ -189,7 +189,7 @@
     "isOpen": true,
     "menu": [
       {
-        "id": "bil-1",
+        "id": "2415531-1",
         "name": "Nasi Ayam Gepuk",
         "description": "Fried chicken with sambal and rice",
         "price": 8,
@@ -198,7 +198,7 @@
         "popular": true
       },
       {
-        "id": "bil-2",
+        "id": "2415531-2",
         "name": "Mee Tarik",
         "description": "Chinese pulled noodles with chili sauce",
         "price": 10,
@@ -207,7 +207,7 @@
         "popular": true
       },
       {
-        "id": "bil-3",
+        "id": "2415531-3",
         "name": "Green Tea",
         "description": "Green tea with milk and sugar",
         "price": 3,
@@ -216,7 +216,7 @@
         "popular": false
       },
       {
-        "id": "bil-4",
+        "id": "2415531-4",
         "name": "Thai Tea",
         "description": "Thai tea with milk and sugar",
         "price": 3,
@@ -225,7 +225,7 @@
         "popular": false
       },
       {
-        "id": "bil-5",
+        "id": "2415531-5",
         "name": "Nasi Ayam",
         "description": "Fried chicken with rice",
         "price": 6,
@@ -234,7 +234,7 @@
         "popular": false
       },
       {
-        "id": "bil-6",
+        "id": "2415531-6",
         "name": "Sizzling Chicken Mee",
         "description": "Sizzling chicken with yee mee noodles",
         "price": 8,
@@ -243,7 +243,7 @@
         "popular": false
       },
       {
-        "id": "bil-7",
+        "id": "2415531-7",
         "name": "Sizzling Chicken Rice",
         "description": "Sizzling chicken with rice",
         "price": 8,
@@ -252,7 +252,7 @@
         "popular": false
       },
       {
-        "id": "bil-8",
+        "id": "2415531-8",
         "name": "Nasi Ayam Gepuk Special",
         "description": "Fried chicken with sambal and rice, plus kubis goreng",
         "price": 10,

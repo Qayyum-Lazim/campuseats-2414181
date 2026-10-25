@@ -177,3 +177,36 @@ start; }
 .form input, .form select { padding: 0.5rem; border: 1px solid #c5cbd3; borderradius: 8px; font: inherit; }
 .field-error { color: #b3261e; font-size: 0.85rem; margin: 0; }
 .error { border-left: 4px solid #b3261e; }
+
+/* Category Filter */
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-btn {
+  padding: 10px 18px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: white;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.category-btn:hover {
+  background-color: #e8f5e9;
+  border-color: #2e7d32;
+}
+
+.category-btn.active {
+  background-color: #2e7d32;
+  color: white;
+  border-color: #2e7d32;
+  font-weight: bold;
+}
