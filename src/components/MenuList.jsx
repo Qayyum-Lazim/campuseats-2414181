@@ -1,20 +1,29 @@
-
-import { useState } from 'react'
+import { useSearchParams } from 'react-router'
 import MenuItemCard from './MenuItemCard.jsx'
+import useCart from '../hooks/useCart.js'
 
-function MenuList({ items, onAdd }) {
-  const [selectedCategory, setSelectedCategory] = useState('All')
+function MenuList({ items }) {
+  const { addToCart } = useCart()
+  const [searchParams, setSearchParams] = useSearchParams()
 
-  // Get unique categories from menu items
-  const categories = [
-    'All',
-    ...new Set(items.map((item) => item.category))
-  ]
+  const categories = ['All', ...new Set(items.map((item) => item.category))]
 
-  // Filter items based on selected category
-  const filteredItems = selectedCategory === 'All'
-    ? items
-    : items.filter((item) => item.category === selectedCategory)
+  // Read the category from the URL; fall back to All if it is missing or unknown
+  const cat = searchParams.get('cat')
+  const selectedCategory = categories.includes(cat) ? cat : 'All'
+
+  function handleSelect(category) {
+    if (category === 'All') {
+      setSearchParams({})
+    } else {
+      setSearchParams({ cat: category })
+    }
+  }
+
+  const filteredItems =
+    selectedCategory === 'All'
+      ? items
+      : items.filter((item) => item.category === selectedCategory)
 
   return (
     <div>
@@ -28,29 +37,21 @@ function MenuList({ items, onAdd }) {
                 ? 'category-btn active'
                 : 'category-btn'
             }
-            onClick={() => setSelectedCategory(category)}
+            onClick={() => handleSelect(category)}
           >
             {category}
           </button>
         ))}
       </div>
 
-      <p className="muted">
-        Showing {filteredItems.length} item(s)
-      </p>
+      <p className="muted">Showing {filteredItems.length} item(s)</p>
 
       {filteredItems.length === 0 ? (
-        <p className="muted">
-          No items found in this category.
-        </p>
+        <p className="muted">No items found in this category.</p>
       ) : (
         <div className="grid">
           {filteredItems.map((item) => (
-            <MenuItemCard
-              key={item.id}
-              item={item}
-              onAdd={onAdd}
-            />
+            <MenuItemCard key={item.id} item={item} onAdd={addToCart} />
           ))}
         </div>
       )}
