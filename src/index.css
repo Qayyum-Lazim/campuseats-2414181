@@ -210,3 +210,24 @@ start; }
   border-color: #2e7d32;
   font-weight: bold;
 }
+
+
+.status-steps { display: flex; gap: 0.4rem; list-style: none; padding: 0; flex-wrap:
+wrap; }
+.status-steps li { padding: 0.15rem 0.6rem; border-radius: 999px; background:
+#eef0f3; font-size: 0.8rem; }
+.status-steps li.done { background: var(--green); color: #fff; }
+
+.order-actions { display: flex; flex-wrap: wrap; gap: 0.5rem;
+ align-items: center; margin-top: 0.6rem; }
+.order-actions input { width: auto; }
+.btn-small { padding: 0.3rem 0.8rem; font-size: 0.85rem; }
+/* Fix button links */
+.container a.btn {
+  color: #fff;
+  display: inline-block;
+  width: auto;
+  padding: 0.55rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+}

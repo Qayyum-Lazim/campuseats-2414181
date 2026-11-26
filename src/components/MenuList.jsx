@@ -1,46 +1,25 @@
 
 import MenuItemCard from './MenuItemCard.jsx'
 import useCart from '../hooks/useCart.js'
-import { useAuth } from '../hooks/useAuth.js'
-import { useLocalStorage } from '../hooks/useLocalStorage.js'
 
-function MenuList({ items }) {
+function MenuList({
+  items,
+  categories = [],
+  selectedCategory = 'All',
+  onSelectCategory
+}) {
   const { addToCart } = useCart()
-  const { user } = useAuth()
 
-  // Each user gets their own category preference.
-  // Guests use All and do not save their selection.
-  const storageKey = user
-    ? 'ce-category-' + user.uid
-    : null
-
-  const [preferredCategory, setPreferredCategory] =
-    useLocalStorage(storageKey, 'All')
-
-  const categories = [
+  const availableCategories = [
     'All',
-    ...new Set(items.map((item) => item.category))
+    ...categories.filter((category) => category !== 'All')
   ]
-
-  const selectedCategory = categories.includes(preferredCategory)
-    ? preferredCategory
-    : 'All'
-
-  function handleSelect(category) {
-    setPreferredCategory(category)
-  }
-
-  const filteredItems =
-    selectedCategory === 'All'
-      ? items
-      : items.filter(
-          (item) => item.category === selectedCategory
-        )
 
   return (
     <div>
+      {/* Category filter buttons */}
       <div className="category-filters">
-        {categories.map((category) => (
+        {availableCategories.map((category) => (
           <button
             key={category}
             type="button"
@@ -49,7 +28,7 @@ function MenuList({ items }) {
                 ? 'category-btn active'
                 : 'category-btn'
             }
-            onClick={() => handleSelect(category)}
+            onClick={() => onSelectCategory(category)}
           >
             {category}
           </button>
@@ -57,16 +36,17 @@ function MenuList({ items }) {
       </div>
 
       <p className="muted">
-        Showing {filteredItems.length} item(s)
+        Showing {items.length} item(s)
       </p>
 
-      {filteredItems.length === 0 ? (
+      {/* Display filtered menu */}
+      {items.length === 0 ? (
         <p className="muted">
           No items found in this category.
         </p>
       ) : (
         <div className="grid">
-          {filteredItems.map((item) => (
+          {items.map((item) => (
             <MenuItemCard
               key={item.id}
               item={item}

@@ -6,6 +6,7 @@
     "location": "WadiBudi, Block A",
     "openHours": "7:00 am - 10:00 pm",
     "isOpen": true,
+    "categories": ["Rice", "Starters", "Drinks"],
     "menu": [
       {
         "id": "2414181-1",
@@ -96,6 +97,7 @@
     "location": "Mahallah Uthman, Block E",
     "openHours": "8:00 am - 10:00 pm",
     "isOpen": true,
+    "categories": ["Rice", "Noodles", "Drinks", "Snacks"],
     "menu": [
       {
         "id": "2411193-1",
@@ -187,6 +189,7 @@
     "location": "Mahallah Bilal, Cafe Block, Ground Floor",
     "openHours": "7:00 am - 10:00 pm",
     "isOpen": true,
+    "categories": ["Rice", "Noodles", "Drinks"],
     "menu": [
       {
         "id": "2415531-1",

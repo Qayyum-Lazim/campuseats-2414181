@@ -34,6 +34,9 @@ function CartProvider({ children }) {
     setCart((prev) => prev.filter((line) => line.item.id !== itemId))
   }
 
+  function clearCart() {
+  setCart([])
+}
   function placeOrder(details) {
     const order = {
       id: Date.now(),
@@ -48,7 +51,7 @@ function CartProvider({ children }) {
 
   return (
     <CartContext.Provider
-      value={{ cart, orders, count, total, addToCart, changeQty, removeFromCart, placeOrder }}
+      value={{ cart, orders, count, total, addToCart, changeQty, removeFromCart, placeOrder, clearCart }}
     >
       {children}
     </CartContext.Provider>
